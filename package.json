@@ -23,7 +23,7 @@
     "typecheck": "tsc --noEmit",
     "prepublishOnly": "npm run build"
   },
-  "publishConfig": { "access": "public", "provenance": true },
+  "publishConfig": { "access": "public" },
   "devDependencies": {
     "tsup": "^8.3.0",
     "typescript": "^5"
