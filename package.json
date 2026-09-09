@@ -1,0 +1,31 @@
+{
+  "name": "fundfacts",
+  "version": "0.1.0",
+  "description": "Official client for FundFacts API: structured fund & ETF data from any ISIN (key facts, TER, risk, holdings, exposure, performance), plus batch, search, portfolio look-through and overlap.",
+  "keywords": ["fund data", "ETF", "ISIN", "UCITS", "factsheet", "holdings", "TER", "SRRI", "finance", "api", "fundfacts"],
+  "homepage": "https://fundfactsapi.com",
+  "author": "FundFacts API <hello@fundfactsapi.com> (https://fundfactsapi.com)",
+  "bugs": { "url": "https://github.com/fundfactsapi/fundfactsapi-js/issues" },
+  "repository": { "type": "git", "url": "git+https://github.com/fundfactsapi/fundfactsapi-js.git" },
+  "license": "MIT",
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": { "types": "./dist/index.d.ts", "import": "./dist/index.js", "require": "./dist/index.cjs" }
+  },
+  "files": ["dist", "README.md"],
+  "sideEffects": false,
+  "engines": { "node": ">=18" },
+  "scripts": {
+    "build": "tsup src/index.ts --format esm,cjs --dts --clean",
+    "typecheck": "tsc --noEmit",
+    "prepublishOnly": "npm run build"
+  },
+  "publishConfig": { "access": "public", "provenance": true },
+  "devDependencies": {
+    "tsup": "^8.3.0",
+    "typescript": "^5"
+  }
+}
