@@ -1,5 +1,5 @@
 {
-  "name": "fundfacts",
+  "name": "@fundfactsapi/sdk",
   "version": "0.1.0",
   "description": "Official client for FundFacts API: structured fund & ETF data from any ISIN (key facts, TER, risk, holdings, exposure, performance), plus batch, search, portfolio look-through and overlap.",
   "keywords": ["fund data", "ETF", "ISIN", "UCITS", "factsheet", "holdings", "TER", "SRRI", "finance", "api", "fundfacts"],

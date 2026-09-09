@@ -1,13 +1,13 @@
-# fundfacts
+# @fundfactsapi/sdk
 
 Official JavaScript / TypeScript client for [FundFacts API](https://fundfactsapi.com): any fund or ETF **ISIN → one structured JSON factsheet** (key facts, TER, SRRI risk indicator, derived profile, top holdings, sector / country / asset breakdowns, calendar and annualised returns, monthly series, volatility, Sharpe, max drawdown), read from the documents each fund house publishes and refreshed every 24 hours. Zero dependencies; Node 18+, Bun, Deno, edge runtimes.
 
 ```bash
-npm install fundfacts
+npm install @fundfactsapi/sdk
 ```
 
 ```ts
-import { FundFacts } from "fundfacts";
+import { FundFacts } from "@fundfactsapi/sdk";
 
 const ff = new FundFacts({ apiKey: process.env.FUNDFACTS_API_KEY }); // free key at https://fundfactsapi.com/signup
 

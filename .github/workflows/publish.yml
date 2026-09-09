@@ -1,4 +1,4 @@
-# Publishes to npm when a GitHub release is published (tag = version, e.g. v0.1.0).
+# Publishes @fundfactsapi/sdk to npm when a GitHub release is published (tag = version, e.g. v0.1.0).
 # Requires an npm granular access token with publish rights stored as NPM_TOKEN,
 # or npm Trusted Publishing configured for this repo (then the token is unnecessary).
 name: Publish to npm

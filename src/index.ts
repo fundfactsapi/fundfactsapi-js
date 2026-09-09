@@ -132,7 +132,7 @@ export class FundFacts {
   }
 
   private headers(json = false): Record<string, string> {
-    return { Authorization: `Bearer ${this.key}`, Accept: "application/json", ...(json ? { "Content-Type": "application/json" } : {}), "User-Agent": "fundfacts-js/0.1.0" };
+    return { Authorization: `Bearer ${this.key}`, Accept: "application/json", ...(json ? { "Content-Type": "application/json" } : {}), "User-Agent": "fundfactsapi-sdk/0.1.0" };
   }
 
   private async request<T>(method: "GET" | "POST", path: string, body?: unknown): Promise<T> {
